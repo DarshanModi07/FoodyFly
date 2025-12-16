@@ -1,11 +1,12 @@
 [
   {
-    "resId": "8",
+    "resId": "1",
     "name": "The Spice Route",
     "cuisine": "North Indian, Chinese",
     "rating": 4.5,
     "costForTwo": 700,
     "imageUrl": "https://t4.ftcdn.net/jpg/05/53/98/37/360_F_553983713_fPQArPANoKopj2Tm4621eYAA1SXy48qt.jpg",
+
     "categories": [
       {
         "title": "Recommended",
@@ -29,13 +30,15 @@
       }
     ]
   },
+
   {
-    "resId": "4",
+    "resId": "2",
     "name": "Punjab Grill",
     "cuisine": "North Indian, Mughlai",
     "rating": 4.7,
     "costForTwo": 600,
     "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg",
+
     "categories": [
       {
         "title": "Recommended",
@@ -59,13 +62,15 @@
       }
     ]
   },
+
   {
-    "resId": "6",
+    "resId": "3",
     "name": "South Spice",
     "cuisine": "South Indian",
     "rating": 4.6,
     "costForTwo": 500,
     "imageUrl": "https://www.shutterstock.com/image-photo/paper-masala-dosa-south-indian-600nw-1008144772.jpg",
+
     "categories": [
       {
         "title": "Recommended",
@@ -89,13 +94,15 @@
       }
     ]
   },
+
   {
-    "resId": "10",
+    "resId": "4",
     "name": "Sushi House",
     "cuisine": "Japanese, Seafood",
     "rating": 3.8,
     "costForTwo": 800,
     "imageUrl": "https://amazoniarestaurant.com/wp-content/uploads/2025/08/sushi-image-2048x1365.jpg",
+
     "categories": [
       {
         "title": "Recommended",
@@ -119,6 +126,7 @@
       }
     ]
   },
+
   {
     "resId": "5",
     "name": "Dosa Plaza",
@@ -126,6 +134,7 @@
     "rating": 4.5,
     "costForTwo": 400,
     "imageUrl": "https://static.toiimg.com/thumb/msid-113810989,width-1280,height-720,resizemode-4/113810989.jpg",
+
     "categories": [
       {
         "title": "Recommended",
@@ -144,18 +153,20 @@
       },
       {
         "title": "Other Items",
-        "items": ["Idli Sambar", "Dosa", "Uttapam"],
+        "items": ["Idli Sambar", "Dosa", "Uttapam"],  
         "price": [80, 120, 100]
       }
     ]
   },
+
   {
-    "resId": "7",
+    "resId": "6",
     "name": "Desi Tadka",
     "cuisine": "North Indian, Street Food",
     "rating": 2.7,
     "costForTwo": 500,
     "imageUrl": "https://www.slurrp.com/web/_next/image?url=https%3A%2F%2Fimages.slurrp.com%2Fprod%2Farticles%2Fr59d6osh0b.webp%3Fimpolicy%3Dslurrp-20210601%26width%3D1200%26height%3D900%26q%3D75&w=3840&q=75",
+
     "categories": [
       {
         "title": "Recommended",
@@ -179,13 +190,15 @@
       }
     ]
   },
+
   {
-    "resId": "9",
+    "resId": "7",
     "name": "Dragon's Delight",
     "cuisine": "Chinese, Asian",
     "rating": 4.3,
     "costForTwo": 650,
     "imageUrl": "https://www.chefadora.com/_next/image?url=https%3A%2F%2Fchefadora.b-cdn.net%2FScreenshot_2024_10_01_140619_572a1d5d13.jpg&w=1920&q=75",
+
     "categories": [
       {
         "title": "Recommended",
@@ -209,13 +222,15 @@
       }
     ]
   },
+
   {
-    "resId": "2",
+    "resId": "8",
     "name": "Enjoy Bites",
     "cuisine": "American, Fast Food, Continental",
     "rating": 4.0,
     "costForTwo": 550,
     "imageUrl": "https://blog.swiggy.com/wp-content/uploads/2025/01/Image-8_-chicken-burger-1024x538.png",
+
     "categories": [
       {
         "title": "Recommended",
@@ -239,13 +254,15 @@
       }
     ]
   },
+
   {
-    "resId": "1",
+    "resId": "9",
     "name": "Satvik Rasoi",
     "cuisine": "North Indian, South Indian, Continental",
     "rating": 4.2,
     "costForTwo": 600,
     "imageUrl": "https://images.slurrp.com/prod/community/2022/June/f2232459-bf30-45d6-aee9-f532369ca50d-1654536630232.webp?impolicy=slurrp-20210601&width=1200&height=675",
+
     "categories": [
       {
         "title": "Recommended",
@@ -269,13 +286,15 @@
       }
     ]
   },
+
   {
-    "resId": "3",
+    "resId": "10",
     "name": "Nisha's Kitchen",
     "cuisine": "North Indian",
     "rating": 4.7,
     "costForTwo": 400,
     "imageUrl": "https://nishamadhulika.com/imgpst/featured/Sev-Tamatar-recipe.JPG",
+
     "categories": [
       {
         "title": "Recommended",
