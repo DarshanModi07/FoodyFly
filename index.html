@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FoodyFly - A modern food ordering and restaurant discovery platform">
+    <meta name="keywords" content="food ordering, restaurants, delivery, online food">
+    <meta name="author" content="Darshan">
+    <title>FoodyFly - Food Ordering & Restaurant Discovery</title>
+    <script>
+  const theme = localStorage.getItem('theme');
+
+  if (
+    theme === 'dark' ||
+    (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+</script>
+
+
+    <link href="/src/index.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="bg-white dark:bg-[#133567ff]">
+    <div id="root"></div>
+    <script type="module" src="/src/App.js"></script>
+</body>
+</html>

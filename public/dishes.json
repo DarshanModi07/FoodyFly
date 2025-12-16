@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "RestroName": "Satvik Rasoi",
+    "name": "Khichdi",
+    "cuisine": "North Indian",
+    "rating": 3.5,
+    "imageUrl": "https://images.slurrp.com/prod/community/2022/June/f2232459-bf30-45d6-aee9-f532369ca50d-1654536630232.webp?impolicy=slurrp-20210601&width=1200&height=675",
+    "price": 150,
+    "promoted": true
+  },
+  {
+    "id": 2,
+    "RestroName": "Enjoy Bites",
+    "name": "Burger",
+    "cuisine": "American",
+    "rating": 3.8,
+    "imageUrl": "https://blog.swiggy.com/wp-content/uploads/2025/01/Image-8_-chicken-burger-1024x538.png",
+    "price": 170,
+    "promoted": false
+  },
+  {
+    "id": 3,
+    "RestroName": "Nisha's Kitchen",
+    "name": "Sev Tametar Sabzi",
+    "cuisine": "North Indian",
+    "rating": 4.7,
+    "imageUrl": "https://nishamadhulika.com/imgpst/featured/Sev-Tamatar-recipe.JPG",
+    "price": 190,
+    "promoted": true
+  },
+  {
+    "id": 4,
+    "RestroName": "Punjab Grill",
+    "name": "Paneer Butter Masala",
+    "cuisine": "North Indian",
+    "rating": 4.7,
+    "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg",
+    "price": 200,
+    "promoted": false
+  },
+  {
+    "id": 5,
+    "RestroName": "Dosa Plaza",
+    "name": "Idli Sambar",
+    "cuisine": "South Indian",
+    "rating": 4.5,
+    "imageUrl": "https://static.toiimg.com/thumb/msid-113810989,width-1280,height-720,resizemode-4/113810989.jpg",
+    "price": 200,
+    "promoted": false
+  },
+  {
+    "id": 6,
+    "RestroName": "South Spice",
+    "name": "Masala Dosa",
+    "cuisine": "South Indian",
+    "rating": 4.6,
+    "imageUrl": "https://www.shutterstock.com/image-photo/paper-masala-dosa-south-indian-600nw-1008144772.jpg",
+    "price": 220,
+    "promoted": false
+  },
+  {
+    "id": 7,
+    "RestroName": "Desi Tadka",
+    "name": "Rajma Chawal",
+    "cuisine": "North Indian",
+    "rating": 2.7,
+    "imageUrl": "https://www.slurrp.com/web/_next/image?url=https%3A%2F%2Fimages.slurrp.com%2Fprod%2Farticles%2Fr59d6osh0b.webp%3Fimpolicy%3Dslurrp-20210601%26width%3D1200%26height%3D900%26q%3D75&w=3840&q=75",
+    "price": 250,
+    "promoted": false
+  },
+  {
+    "id": 8,
+    "RestroName": "The Spice Route",
+    "name": "Chole Bhature",
+    "cuisine": "North Indian",
+    "rating": 4.5,
+    "imageUrl": "https://t4.ftcdn.net/jpg/05/53/98/37/360_F_553983713_fPQArPANoKopj2Tm4621eYAA1SXy48qt.jpg",
+    "price": 350,
+    "promoted": true
+  },
+  {
+    "id": 9,
+    "RestroName": "Dragon's Delight",
+    "name": "Manchurian",
+    "cuisine": "Chinese",
+    "rating": 4.6,
+    "imageUrl": "https://www.chefadora.com/_next/image?url=https%3A%2F%2Fchefadora.b-cdn.net%2FScreenshot_2024_10_01_140619_572a1d5d13.jpg&w=1920&q=75",
+    "price": 370,
+    "promoted": true
+  },
+  {
+    "id": 10,
+    "RestroName": "Sushi House",
+    "name": "Sushi",
+    "cuisine": "Japanese",
+    "rating": 3.8,
+    "imageUrl": "https://amazoniarestaurant.com/wp-content/uploads/2025/08/sushi-image-2048x1365.jpg",
+    "price": 380,
+    "promoted": false
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "resId": "1",
+    "name": "The Spice Route",
+    "cuisine": "North Indian, Chinese",
+    "rating": 4.5,
+    "costForTwo": 700,
+    "imageUrl": "https://t4.ftcdn.net/jpg/05/53/98/37/360_F_553983713_fPQArPANoKopj2Tm4621eYAA1SXy48qt.jpg",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Butter Chicken", "Chole Bhature", "Veg Manchurian"],
+        "price": [250, 150, 200]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Paneer Tikka Roll", "Honey Chilli Potato"],
+        "price": [200, 150]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Gulab Jamun", "Kesar Kulfi", "Rasmalai"],
+        "price": [100, 150, 200]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Chole Bhature", "Butter Chicken", "Naan"],
+        "price": [150, 250, 50]
+      }
+    ]
+  },
+
+  {
+    "resId": "2",
+    "name": "Punjab Grill",
+    "cuisine": "North Indian, Mughlai",
+    "rating": 4.7,
+    "costForTwo": 600,
+    "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Dal Makhani", "Paneer Butter Masala", "Tandoori Roti"],
+        "price": [200, 250, 50]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Amritsari Kulcha", "Murg Malai Tikka"],
+        "price": [150, 200]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Phirni", "Rabdi Kulfi", "Jalebi"],
+        "price": [100, 150, 120]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Paneer Butter Masala", "Dal Makhani", "Tandoori Roti"],
+        "price": [250, 200, 50]
+      }
+    ]
+  },
+
+  {
+    "resId": "3",
+    "name": "South Spice",
+    "cuisine": "South Indian",
+    "rating": 4.6,
+    "costForTwo": 500,
+    "imageUrl": "https://www.shutterstock.com/image-photo/paper-masala-dosa-south-indian-600nw-1008144772.jpg",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Masala Dosa", "Idli Sambar", "Medu Vada"],
+        "price": [100, 80, 60]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Mysore Bondas", "Ghee Roast Dosa"],
+        "price": [120, 150]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Payasam", "Tender Coconut Ice Cream", "Kesari Bath"],
+        "price": [100, 150, 120]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Masala Dosa", "Idli Sambar", "Vada"],
+        "price": [100, 80, 60]
+      }
+    ]
+  },
+
+  {
+    "resId": "4",
+    "name": "Sushi House",
+    "cuisine": "Japanese, Seafood",
+    "rating": 3.8,
+    "costForTwo": 800,
+    "imageUrl": "https://amazoniarestaurant.com/wp-content/uploads/2025/08/sushi-image-2048x1365.jpg",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["California Roll", "Chicken Ramen", "Tempura Prawns"],
+        "price": [200, 250, 300]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Spicy Tuna Roll", "Teriyaki Chicken Bowl"],
+        "price": [250, 300]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Mochi Ice Cream", "Matcha Cheesecake", "Dorayaki"],
+        "price": [150, 200, 180]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Sushi", "Ramen", "Tempura"],
+        "price": [200, 250, 300]
+      }
+    ]
+  },
+
+  {
+    "resId": "5",
+    "name": "Dosa Plaza",
+    "cuisine": "South Indian, Fast Food",
+    "rating": 4.5,
+    "costForTwo": 400,
+    "imageUrl": "https://static.toiimg.com/thumb/msid-113810989,width-1280,height-720,resizemode-4/113810989.jpg",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Mysore Masala Dosa", "Cheese Uttapam", "Idli Sambar"],
+        "price": [120, 100, 80]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Corn Dosa", "Paneer Schezwan Dosa"],
+        "price": [100, 150]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Gulab Jamun", "Vanilla Ice Cream", "Kesari"],
+        "price": [100, 150, 120]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Idli Sambar", "Dosa", "Uttapam"],  
+        "price": [80, 120, 100]
+      }
+    ]
+  },
+
+  {
+    "resId": "6",
+    "name": "Desi Tadka",
+    "cuisine": "North Indian, Street Food",
+    "rating": 2.7,
+    "costForTwo": 500,
+    "imageUrl": "https://www.slurrp.com/web/_next/image?url=https%3A%2F%2Fimages.slurrp.com%2Fprod%2Farticles%2Fr59d6osh0b.webp%3Fimpolicy%3Dslurrp-20210601%26width%3D1200%26height%3D900%26q%3D75&w=3840&q=75",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Rajma Chawal", "Aloo Tikki", "Papdi Chaat"],
+        "price": [200, 150, 120]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Stuffed Golgappa", "Schezwan Chaat"],
+        "price": [150, 200]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Kulfi Falooda", "Rabdi", "Matka Ice Cream"],
+        "price": [150, 120, 180]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Rajma Chawal", "Aloo Tikki", "Chaat"],
+        "price": [200, 150, 120]
+      }
+    ]
+  },
+
+  {
+    "resId": "7",
+    "name": "Dragon's Delight",
+    "cuisine": "Chinese, Asian",
+    "rating": 4.3,
+    "costForTwo": 650,
+    "imageUrl": "https://www.chefadora.com/_next/image?url=https%3A%2F%2Fchefadora.b-cdn.net%2FScreenshot_2024_10_01_140619_572a1d5d13.jpg&w=1920&q=75",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Veg Manchurian", "Hakka Noodles", "Fried Rice"],
+        "price": [200, 150, 180]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Chilli Garlic Noodles", "Kung Pao Paneer"],
+        "price": [180, 250]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Honey Noodles Ice Cream", "Mango Ice Cream", "Lychee Pudding"],
+        "price": [150, 120, 180]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Manchurian", "Fried Rice", "Noodles"],
+        "price": [200, 180, 150]
+      }
+    ]
+  },
+
+  {
+    "resId": "8",
+    "name": "Enjoy Bites",
+    "cuisine": "American, Fast Food, Continental",
+    "rating": 4.0,
+    "costForTwo": 550,
+    "imageUrl": "https://blog.swiggy.com/wp-content/uploads/2025/01/Image-8_-chicken-burger-1024x538.png",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Cheese Burger", "Loaded Fries", "Chocolate Shake"],
+        "price": [250, 200, 180]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["BBQ Chicken Burger", "Peri Peri Fries"],
+        "price": [300, 250]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Brownie Sundae", "Vanilla Ice Cream", "Oreo Shake"],
+        "price": [200, 150, 180]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Burger", "Fries", "Shake"],
+        "price": [250, 200, 180]
+      }
+    ]
+  },
+
+  {
+    "resId": "9",
+    "name": "Satvik Rasoi",
+    "cuisine": "North Indian, South Indian, Continental",
+    "rating": 4.2,
+    "costForTwo": 600,
+    "imageUrl": "https://images.slurrp.com/prod/community/2022/June/f2232459-bf30-45d6-aee9-f532369ca50d-1654536630232.webp?impolicy=slurrp-20210601&width=1200&height=675",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Khichdi", "Paneer Butter Masala", "Masala Dosa"],
+        "price": [150, 250, 120]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Herb Pasta", "Cheese Burst Dosa"],
+        "price": [200, 180]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Fruit Custard", "Malai Kulfi", "Sooji Halwa"],
+        "price": [120, 150, 100]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Khichdi", "Paneer Butter Masala", "Pasta"],
+        "price": [150, 250, 200]
+      }
+    ]
+  },
+
+  {
+    "resId": "10",
+    "name": "Nisha's Kitchen",
+    "cuisine": "North Indian",
+    "rating": 4.7,
+    "costForTwo": 400,
+    "imageUrl": "https://nishamadhulika.com/imgpst/featured/Sev-Tamatar-recipe.JPG",
+
+    "categories": [
+      {
+        "title": "Recommended",
+        "items": ["Aloo Paratha", "Sev Tamatar Sabzi", "Jeera Rice"],
+        "price": [100, 80, 120]
+      },
+      {
+        "title": "Newly Added",
+        "items": ["Paneer Paratha", "Stuffed Chole Kulcha"],
+        "price": [150, 200]
+      },
+      {
+        "title": "Desserts",
+        "items": ["Kheer", "Kulfi", "Gulab Jamun"],
+        "price": [120, 150, 180]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Sev Tamatar Sabzi", "Aloo Paratha", "Raita"],
+        "price": [80, 100, 50]
+      }
+    ]
+  }
+]
