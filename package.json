@@ -2,7 +2,6 @@
   "name": "foodyfly",
   "version": "1.0.0",
   "description": "A modern food ordering and restaurant discovery platform built with React, Redux, and Tailwind CSS",
-  "main": "src/App.js",
   "author": {
     "name": "Darshan",
     "url": "https://github.com/darshan-tech"
