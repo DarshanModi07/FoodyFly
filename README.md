@@ -57,9 +57,10 @@
 - 🗂️ **Menu Exploration** - View beautifully organized menu categories and items
 - 🔎 **Smart Search** - Real-time filtering for restaurants and dishes
 - 🛒 **Shopping Cart** - Dynamic add/remove with Redux state management
-- ♾️ **Infinite Scroll** - Seamlessly load more restaurants as you scroll
 - 📍 **Restaurant Details** - View ratings, pricing, delivery info, and cuisines
 - 🔗 **Deep Linking** - Direct links to restaurant menus
+- ⚡ **Lazy Loading** - Images and components load on-demand for better performance
+- 📊 **Pagination** - Efficient data loading with page navigation
 
 ### 🎨 **UI/UX Features**
 
@@ -73,8 +74,12 @@
 
 ### 📊 **Advanced Features**
 
+- � **Code Splitting** - Route-based splitting with React.lazy() for optimal bundle size
+- 📦 **Dynamic Imports** - Components loaded on-demand, not upfront
+- 🖼️ **Image Lazy Loading** - Images load only when visible in viewport
+- ⚡ **Performance Optimization** - Memoization and efficient re-renders
+- 🎬 **Skeleton Screens** - Placeholder UI for smooth loading experience
 - 🔄 **Offline Support** - Works when you're offline with caching
-- 📊 **Performance Optimized** - Lazy route loading and code splitting
 - 🧪 **Test Coverage** - Unit tests for critical components
 - 🎨 **Component Library** - Reusable, well-structured components
 
@@ -379,12 +384,13 @@ npm run test:watch
 ### ⚡ **Optimizations Implemented**
 
 - ✅ **Code Splitting** - Lazy load routes with React.lazy()
-- ✅ **Infinite Scroll** - Efficient pagination for large datasets
-- ✅ **Skeleton Loading** - Smooth UX with loading placeholders
+- ✅ **Dynamic Route Loading** - Routes split and loaded only when needed
+- ✅ **Skeleton Loading** - Smooth UX with loading placeholders while data fetches
 - ✅ **Production Build** - Optimized bundles with Parcel
-- ✅ **Image Optimization** - Responsive images & lazy loading
-- ✅ **Caching** - Browser & service worker caching
-- ✅ **Minification** - Compressed CSS & JavaScript
+- ✅ **Image Lazy Loading** - Images load only when they enter viewport
+- ✅ **Component Memoization** - Prevents unnecessary re-renders with React.memo
+- ✅ **Efficient Data Fetching** - Caching and request optimization
+- ✅ **Minification** - Compressed CSS & JavaScript for faster delivery
 
 ### 📈 **Lighthouse Scores**
 
