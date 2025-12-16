@@ -67,7 +67,7 @@
     "rating": 4.6,
     "imageUrl": "https://www.chefadora.com/_next/image?url=https%3A%2F%2Fchefadora.b-cdn.net%2FScreenshot_2024_10_01_140619_572a1d5d13.jpg&w=1920&q=75",
     "price": 370,
-    "promoted": true
+    "promoted": false
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "rating": 3.8,
     "imageUrl": "https://blog.swiggy.com/wp-content/uploads/2025/01/Image-8_-chicken-burger-1024x538.png",
     "price": 170,
-    "promoted": false
+    "promoted": true
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "rating": 3.5,
     "imageUrl": "https://images.slurrp.com/prod/community/2022/June/f2232459-bf30-45d6-aee9-f532369ca50d-1654536630232.webp?impolicy=slurrp-20210601&width=1200&height=675",
     "price": 150,
-    "promoted": true
+    "promoted": false
   },
   {
     "id": 10,
