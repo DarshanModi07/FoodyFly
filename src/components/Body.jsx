@@ -42,7 +42,7 @@ const Body = () => {
     };
 
     if (DISH.length === 0) {
-        return <h1 className="text-center mt-10 text-2xl font-bold text-red-500">Something went Wrong...</h1>
+        return <h1 className="text-center mt-10 text-2xl font-bold text-red-500">Dish does not exists...</h1>
     }
 
     function TopRated() {
