@@ -538,7 +538,7 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 
 ### 🎯 **Created by Darshan**
 
-- **GitHub**: [@darshan-tech](https://github.com/DarshanModi07)
+- **GitHub**: [DarshanModi07](https://github.com/DarshanModi07)
 - **Project**: [FoodyFly on GitHub](https://github.com/DarshanModi07/FoodyFly)
 - **Live Demo**: [foody-fly-1.vercel.app](https://foody-fly-1.vercel.app/)
 
