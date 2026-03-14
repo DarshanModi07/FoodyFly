@@ -26,13 +26,7 @@
   ],
   "scripts": {
   "start": "parcel index.html",
-  "test": "jest --config config/jest.config.js",
-  "test:coverage": "jest --coverage --config config/jest.config.js",
-  "test:watch": "jest --watch --config config/jest.config.js",
-  "build": "parcel build index.html --dist-dir dist --no-cache --no-source-maps",
-  "clean": "rm -rf build .parcel-cache dist",
-  "lint": "echo 'No linter configured yet'",
-  "prestart": "npm run clean"
+  "build": "parcel build index.html --dist-dir dist --no-cache --no-source-maps"
 },
   "devDependencies": {
     "@babel/core": "^7.28.5",
@@ -69,8 +63,11 @@
     "tailwindcss": "^4.1.17"
   },
   "targets": {
-    "default": {
-      "distDir": "build"
-    }
+  "default": {
+    "distDir": "dist"
   }
+},
+"engines": {
+  "node": "18.x"
+}
 }
