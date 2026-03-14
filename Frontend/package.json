@@ -25,15 +25,15 @@
     "parcel"
   ],
   "scripts": {
-    "start": "parcel index.html",
-    "test": "jest --config config/jest.config.js",
-    "test:coverage": "jest --coverage --config config/jest.config.js",
-    "test:watch": "jest --watch --config config/jest.config.js",
-    "build": "parcel build index.html --dist-dir dist --no-cache",
-    "clean": "rm -rf build .parcel-cache dist",
-    "lint": "echo 'No linter configured yet'",
-    "prestart": "npm run clean"
-  },
+  "start": "parcel index.html",
+  "test": "jest --config config/jest.config.js",
+  "test:coverage": "jest --coverage --config config/jest.config.js",
+  "test:watch": "jest --watch --config config/jest.config.js",
+  "build": "parcel build index.html --dist-dir dist --no-cache --no-source-maps",
+  "clean": "rm -rf build .parcel-cache dist",
+  "lint": "echo 'No linter configured yet'",
+  "prestart": "npm run clean"
+},
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
