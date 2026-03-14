@@ -14,7 +14,7 @@ import Profile from "./components/profile";
 import Error from "./components/Error";
 import Loading from "./components/Loading";
 import Login from "./components/login";
-import Signup from "./components/Signup";
+import Signup from "./components/signup";
 import EditProfile from "./components/EditProfile";
 import OwnerSignup from "./components/OwnerSignup";
 import OwnerHeader from "./components/OwnerHeader";
