@@ -36,7 +36,6 @@ const About   = React.lazy(() => import("./components/About"));
 const Contact = React.lazy(() => import("./components/Contact"));
 const Cart    = React.lazy(() => import("./components/Cart"));
 
-import AppStore from "../redux/appStore";
 import OwnerOrders from "./components/OwnerOrder";
 const BASE_URL = process.env.BASE_URL; 
 
