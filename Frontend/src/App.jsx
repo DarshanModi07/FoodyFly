@@ -34,7 +34,7 @@ const About   = React.lazy(() => import("./components/About.jsx"));
 const Contact = React.lazy(() => import("./components/Contact.jsx"));
 const Cart    = React.lazy(() => import("./components/Cart.jsx"));
 
-const BASE_URL = process.env.BASE_URL; 
+const BASE_URL = import.meta.env.BASE_URL; 
 
 const AppLayout = () => {
   const [userData, setUserData]     = useState(null);

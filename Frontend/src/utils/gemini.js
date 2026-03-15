@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const GEMINI_KEY = process.env.GEMINI_KEY;
+const GEMINI_KEY = import.meta.env.GEMINI_KEY;
 
 console.log("🔑 GEMINI_KEY Loaded:", GEMINI_KEY ? "YES ✅" : "NO ❌");
 
