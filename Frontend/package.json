@@ -25,7 +25,7 @@
     "parcel"
   ],
   "scripts": {
-  "start": "parcel src/index.html",
+  "start": "parcel index.html",
   "build": "parcel build index.html --dist-dir dist --no-cache --no-source-maps"
 },
   "devDependencies": {
