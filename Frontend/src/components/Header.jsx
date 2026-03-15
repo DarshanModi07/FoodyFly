@@ -5,8 +5,8 @@ import ThemeToggle from "./ThemeToggle";
 import { UserContext } from "../utils/UserContext";
 import axios from "axios";
 
-const BASE_URL = process.env.BASE_URL;
-const LOGO_URL = process.env.LOGO_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const LOGO_URL = import.meta.env.VITE_LOGO_URL;
 
 const Header = () => {
 

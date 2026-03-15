@@ -3,8 +3,8 @@ import ThemeToggle from "./ThemeToggle";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
-const BASE_URL = process.env.BASE_URL;
-const LOGO_URL = process.env.LOGO_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const LOGO_URL = import.meta.env.VITE_LOGO_URL;
 
 const OwnerHeader = () => {
     const navigate = useNavigate();

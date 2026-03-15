@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-const BASE_URL = process.env.BASE_URL
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 import { NavLink, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 

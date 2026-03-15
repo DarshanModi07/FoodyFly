@@ -34,7 +34,7 @@ const About   = React.lazy(() => import("./components/About.jsx"));
 const Contact = React.lazy(() => import("./components/Contact.jsx"));
 const Cart    = React.lazy(() => import("./components/Cart.jsx"));
 
-const BASE_URL = import.meta.env.BASE_URL; 
+const BASE_URL = import.meta.env.VITE_BASE_URL; 
 
 const AppLayout = () => {
   const [userData, setUserData]     = useState(null);
@@ -75,7 +75,7 @@ const AppLayout = () => {
   if (!authChecked) return <Loading />;  
 
   return (
-    <Provider store={AppStore}>
+    <>
       <Toaster position="top-center" reverseOrder={false} />
       <div className="app">
         {role === "owner" && <OwnerHeader />}
@@ -84,7 +84,7 @@ const AppLayout = () => {
         <Outlet />
         <Footer />
       </div>
-    </Provider>
+    </>
   );
 };
 

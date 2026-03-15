@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const ChatBot = ({ feedData }) => { 
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const ChatBot = ({ feedData }) => {
 
     try {
 
-      const response = await fetch("http://localhost:7777/api/ask-ai", {
+      const response = await fetch( BASE_URL+ "/api/ask-ai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

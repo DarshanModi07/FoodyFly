@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const inputClass = (err) =>
 `w-full px-4 py-2.5 border rounded-lg font-serif

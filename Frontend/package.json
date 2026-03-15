@@ -26,8 +26,7 @@
   ],
  "scripts": {
   "start": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
+  "build": "vite build"
 },
   "devDependencies": {
     "@testing-library/dom": "^10.4.1",
