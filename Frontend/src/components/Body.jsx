@@ -6,6 +6,7 @@ import axios from "axios";
 import ChatBot from "./ChatBot";
 import toast from "react-hot-toast"; 
 const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const Body = () => {
 
@@ -16,7 +17,6 @@ const Body = () => {
     const [visibleCount, setVisibleCount] = useState(8);
     const [loading, setLoading] = useState(false);
     const loaderRef = useRef(null);
-    const BASE_URL = process.env.BASE_URL 
 
     useEffect(() => {
 
@@ -24,7 +24,7 @@ const Body = () => {
 
             try {
 
-                const res = await axios.get("http://localhost:7777/feed", {
+                const res = await axios.get(BASE_URL+"/feed", {
                     withCredentials: true
                 });
 
