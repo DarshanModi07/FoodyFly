@@ -65,7 +65,7 @@
   "targets": {
   "default": {
     "distDir": "dist",
-    "publicUrl": "./",
+    "publicUrl": "/",
     "scopeHoist": false
   }
 },
