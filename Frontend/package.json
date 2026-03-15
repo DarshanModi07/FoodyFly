@@ -26,7 +26,7 @@
   ],
   "scripts": {
   "start": "parcel index.html",
-  "build": "parcel build index.html --dist-dir dist --public-url ./"
+  "build": "parcel build index.html --dist-dir dist --no-cache --no-source-maps --public-url ./"
 },
   "devDependencies": {
     "@babel/core": "^7.28.5",
