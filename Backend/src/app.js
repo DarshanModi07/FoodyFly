@@ -13,12 +13,13 @@ const GenaiRouter = require("../Routes/Genai");
 const paymentRouter = require("../Routes/payment");
 const passport = require("../config/passport");
 const app = express();
+const CLIENT_URL=process.env.CLIENT_URL
 
 app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "http://localhost:1234",
+    origin: CLIENT_URL,
     credentials: true
 }));
 

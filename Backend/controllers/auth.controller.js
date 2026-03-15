@@ -1,5 +1,6 @@
 const authService = require("../services/auth.service");
 const { sendToken } = require("../utils/token");
+const CLIENT_URL=process.env.CLIENT_URL
 
 exports.signup = async (req, res) => {
   try {
@@ -44,5 +45,5 @@ exports.verifyUser = async (req, res) => {
 
 exports.googleCallback = async (req, res) => {
   sendToken(res, req.user);
-  res.redirect("http://localhost:1234/");
+  res.redirect(CLIENT_URL);
 };

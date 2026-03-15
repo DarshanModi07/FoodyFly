@@ -9,7 +9,7 @@ const client = new OpenAI({
   apiKey: process.env.OPENROUTER_KEY,
   defaultHeaders: {
     // This uses your deployed URL if it exists, otherwise localhost
-    "HTTP-Referer": process.env.SITE_URL || "http://localhost:7777", 
+    "HTTP-Referer": process.env.CLIENT_URL, 
     "X-Title": "FoodyFly",
   }
 });

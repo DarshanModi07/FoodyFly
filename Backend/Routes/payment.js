@@ -1,6 +1,7 @@
 const express = require("express");
 const paymentRouter = express.Router();
 const stripe = require("../utils/stripe");
+const CLIENT_URL = process.env.CLIENT_URL
 
 paymentRouter.post("/create-checkout-session", async (req, res) => {
 
@@ -27,9 +28,9 @@ paymentRouter.post("/create-checkout-session", async (req, res) => {
 
       mode: "payment",
 
-      success_url: "http://localhost:1234/success",
+      success_url: CLIENT_URL+"/success",
 
-      cancel_url: "http://localhost:1234/cart"
+      cancel_url: CLIENT_URL+"/cart"
 
     });
 

@@ -8,9 +8,8 @@ const validator = require("validator")
 const passport = require("passport");
 const session = require("express-session");
 const googleStrategy = require("passport-google-oauth20").Strategy;
+const CLIENT_URL=process.env.CLIENT_URL
 
-
-// Start Google login
 authRouter.get(
   "/auth/google",
   passport.authenticate("google", {
@@ -19,12 +18,11 @@ authRouter.get(
   })
 );
 
-// Google callback
 authRouter.get(
   "/auth/google/callback",
   passport.authenticate("google", {
     session: false,
-    failureRedirect: "http://localhost:1234/login"
+    failureRedirect: CLIENT_URL+"/login"
   }),
   async (req, res) => {
 
@@ -44,7 +42,7 @@ authRouter.get(
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
-    res.redirect("http://localhost:1234/");
+    res.redirect(CLIENT_URL);
   }
 );
 
@@ -66,7 +64,7 @@ authRouter.post("/signup", async (req, res) => {
       password: encryptedPass,
       gender: gender || "other",
       savedAddress: savedAddress || "",
-      role: "user" // default role
+      role: "user" 
     });
 
     const savedUser = await user.save();
@@ -235,7 +233,7 @@ authRouter.post("/owner/signup", async (req, res) => {
       password: encryptedPass,
       gender: gender || "other",
       savedAddress: savedAddress || "",
-      role: "owner"  // 🔥 ONLY DIFFERENCE
+      role: "owner"
     });
 
     const savedUser = await user.save();
