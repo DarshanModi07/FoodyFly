@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addItem } from "../../redux/cartSlice";
 import { NavLink } from "react-router-dom";
-import { addItem,removeItem} from "../../redux/cartSlice";
 
 const RestroCard = ({ data }) => {
 

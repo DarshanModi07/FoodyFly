@@ -1,10 +1,8 @@
 import React, { useState, useEffect, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet, useNavigate } from "react-router-dom";
-import { Provider } from "react-redux";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
-
 // Components
 import Body from "./components/Body.jsx";
 import Header from "./components/Header.jsx";

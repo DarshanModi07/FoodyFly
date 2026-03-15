@@ -4,21 +4,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 const BASE_URL = process.env.BASE_URL;
 
-/*
-  LOGIC:
-  ─────────────────────────────────────────────
-  1. This is SEPARATE from normal user signup
-     It hits POST /owner/signup which sets role = "owner"
-
-  2. After signup → backend sets JWT cookie with role:"owner"
-     Then we redirect to /owner/dashboard
-
-  3. Validation runs client-side first to avoid unnecessary API calls
-
-  4. savedAddress textarea has its own onChange (not handleChange)
-     because of a React controlled component quirk with textarea
-     — actually we fix this here to use handleChange properly
-*/
 
 const inputClass = (err) =>
     `w-full px-4 py-2.5 border rounded-lg font-serif
