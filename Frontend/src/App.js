@@ -6,37 +6,36 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 
 // Components
-import Body from "./components/Body";
-import Header from "./components/Header";
-import { RestroMenu } from "./components/RestroMenu";
-import { Footer } from "./components/Footer";
-import Profile from "./components/profile";
-import Error from "./components/Error";
-import Loading from "./components/Loading";
-import Login from "./components/login";
-import Signup from "./components/signup";
-import EditProfile from "./components/EditProfile";
-import OwnerSignup from "./components/OwnerSignup";
-import OwnerHeader from "./components/OwnerHeader";
-import OwnerDashboard from "./components/OwnerDashboard";
-import OwnerCreateRestro from "./components/OwnerCreateRestro";
-import OwnerAddItem from "./components/OwnerAddItem";
-import OwnerEditItem from "./components/OwnerEditItem";
-import OwnerEditRestaurant from "./components/OwnerEditRestaurant";
-import AdminDashboard from "./components/AdminDashboard";
-import AdminHeader from "./components/AdminHeader";
-import AdminPending from "./components/AdminPanding";
-import AdminRestaurants from "./components/AdminRestaurants";
-import AdminUsers from "./components/AdminUsers";
-import AdminRestaurantDetail from "./components/AdminRestaurantDetail";
-import PaymentSuccess from "./components/PaymentSuccess";
-import OwnerOrders from"./components/OwnerOrder"
+import Body from "./components/Body.jsx";
+import Header from "./components/Header.jsx";
+import { RestroMenu } from "./components/RestroMenu.jsx";
+import { Footer } from "./components/Footer.jsx";
+import Profile from "./components/profile.jsx";
+import Error from "./components/Error.jsx";
+import Loading from "./components/Loading.jsx";
+import Login from "./components/login.jsx";
+import Signup from "./components/signup.jsx";
+import EditProfile from "./components/EditProfile.jsx";
+import OwnerSignup from "./components/OwnerSignup.jsx";
+import OwnerHeader from "./components/OwnerHeader.jsx";
+import OwnerDashboard from "./components/OwnerDashboard.jsx";
+import OwnerCreateRestro from "./components/OwnerCreateRestro.jsx";
+import OwnerAddItem from "./components/OwnerAddItem.jsx";
+import OwnerEditItem from "./components/OwnerEditItem.jsx";
+import OwnerEditRestaurant from "./components/OwnerEditRestaurant.jsx";
+import AdminDashboard from "./components/AdminDashboard.jsx";
+import AdminHeader from "./components/AdminHeader.jsx";
+import AdminPending from "./components/AdminPanding.jsx";
+import AdminRestaurants from "./components/AdminRestaurants.jsx";
+import AdminUsers from "./components/AdminUsers.jsx";
+import AdminRestaurantDetail from "./components/AdminRestaurantDetail.jsx";
+import PaymentSuccess from "./components/PaymentSuccess.jsx";
+import OwnerOrders from"./components/OwnerOrder.jsx"
 
-const About   = React.lazy(() => import("./components/About"));
-const Contact = React.lazy(() => import("./components/Contact"));
-const Cart    = React.lazy(() => import("./components/Cart"));
+const About   = React.lazy(() => import("./components/About.jsx"));
+const Contact = React.lazy(() => import("./components/Contact.jsx"));
+const Cart    = React.lazy(() => import("./components/Cart.jsx"));
 
-import OwnerOrders from "./components/OwnerOrder";
 const BASE_URL = process.env.BASE_URL; 
 
 const AppLayout = () => {
