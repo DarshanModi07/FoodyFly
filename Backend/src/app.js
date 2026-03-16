@@ -26,6 +26,13 @@ app.use(cors({
   credentials: true
 }));
 
+app.options("*", cors({
+  origin: [
+    "http://localhost:1234",
+    "https://foodyfly.vercel.app"
+  ],
+  credentials: true
+}));
 app.options("*", cors());
 
 app.use(passport.initialize());
