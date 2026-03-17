@@ -25,7 +25,7 @@ app.use(cors({
   ],
   credentials: true
 }));
-
+app.use(cookieParser())
 app.use(passport.initialize());
 app.use("/", userAuth);
 app.use("/", feedRouter);

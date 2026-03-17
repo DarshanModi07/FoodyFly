@@ -39,8 +39,8 @@ authRouter.get(
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // true in production (HTTPS)
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -168,6 +168,7 @@ authRouter.post("/logout", async (req, res) => {
       httpOnly: true,
       sameSite: "none",
       secure: true,
+      path: "/"
     });
     
     return res.status(200).json({
