@@ -5,7 +5,7 @@ const ChatBot = ({ feedData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { text: "Hi! 👋 I know the best food spots. Ask me! Please Wait After Messaging Me...", isUser: false }
+    { text: "Hi! 👋 I know the best food spots. Ask me! ", isUser: false }
   ]);
   const [loading, setLoading] = useState(false);
   
