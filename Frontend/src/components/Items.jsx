@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 const Items = ({ items, resId, title, onCartUpdate }) => {
 
   const [updatingItem, setUpdatingItem] = useState(null);
-    const [qty,setQty] = useState(0)
+    const [qty,setQty] = useState(items.qty)
     const [it, setIt] = useState([]);
     const [subtotal, setSubtotal] = useState(0);
     const [gst, setGst] = useState(0);
