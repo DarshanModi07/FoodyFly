@@ -7,7 +7,7 @@ export const RestroMenu = () => {
 
   const { id } = useParams();
 
-  const data = useRestroMenu(Number(id));
+  const data = useRestroMenu(id);
 
   const RestroCategorys = Object.values(data.categories || {});
 
