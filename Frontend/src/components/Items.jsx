@@ -6,13 +6,6 @@ import toast from "react-hot-toast";
 const Items = ({ items, resId, title, onCartUpdate }) => {
 
   const [updatingItem, setUpdatingItem] = useState(null);
-    const [qty,setQty] = useState(items.qty)
-    const [it, setIt] = useState([]);
-    const [subtotal, setSubtotal] = useState(0);
-    const [gst, setGst] = useState(0);
-    const [delivery, setDelivery] = useState(0);
-    const [total, setTotal] = useState(0);
-    const [loading, setLoading] = useState(true);
 
 
   const triggerGlobalCartUpdate = () => {
@@ -53,17 +46,6 @@ const Items = ({ items, resId, title, onCartUpdate }) => {
     const loadingToast = toast.loading("Adding item...");
 
     try {
-
-        const res = await axios.get(BASE_URL + "allOrders", { withCredentials: true });
-        const updatedItems = res.data.data || [];
-        setIt(updatedItems);
-
-        for (const x of updatedItems) {
-          if (x.items?.name === item.name) {
-            setQty(x.qty);
-          }
-        }
-
 
       setUpdatingItem(item.name);
 
@@ -192,7 +174,7 @@ const Items = ({ items, resId, title, onCartUpdate }) => {
             </div>
 
             <div className="text-sm mt-1">
-              Quantity: {qty}
+              Quantity: {item.qty}
             </div>
 
           </div>
