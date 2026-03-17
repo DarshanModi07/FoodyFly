@@ -12,9 +12,10 @@ const OwnerOrders = () => {
         setLoading(true);
         try {
             const res = await axios.get(BASE_URL + "owner/pandingOrder", { withCredentials: true });
-            setOrders(res.data.Orders || []);
+            setOrders(res?.data?.Orders || []);
         } catch {
-            toast.error("Failed to load orders");
+    console.error(err);
+    toast.error("Failed to load orders");    
         } finally {
             setLoading(false);
         }

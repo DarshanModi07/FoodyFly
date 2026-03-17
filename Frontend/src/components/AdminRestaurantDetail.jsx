@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-const BASE_URL = process.env.VITE_BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const StatBox = ({ icon, label, value }) => (
   <div className="bg-white dark:bg-gray-700 rounded-lg p-4 border border-[#4a7ac3]/30 text-center">

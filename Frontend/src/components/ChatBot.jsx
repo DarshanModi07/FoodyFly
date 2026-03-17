@@ -28,7 +28,7 @@ const ChatBot = ({ feedData }) => {
 
     try {
 
-      const response = await fetch( BASE_URL+ "/api/ask-ai", {
+      const response = await fetch( BASE_URL+ "api/ask-ai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -86,7 +86,7 @@ if(onUpdated) onUpdated();
 }catch(err){
 
 toast.dismiss(t);
-toast.error(err.response?.data?.message || "Failed to add item");
+toast.error(err?.response?.data?.message || "Failed to add item");
 
 }finally{
 setLoading(false);

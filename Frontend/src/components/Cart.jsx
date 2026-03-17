@@ -5,7 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { stripePromise } from "../utils/stripe";
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const Cart = () => {
 

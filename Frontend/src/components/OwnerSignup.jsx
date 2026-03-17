@@ -75,7 +75,7 @@ const OwnerSignup = () => {
 
         } catch (err) {
             toast.dismiss(t);
-            toast.error(err.response?.data?.message || "Signup failed ❌");
+            toast.error(err?.response?.data?.message || "Signup failed ❌");
         } finally {
             setLoading(false);
         }

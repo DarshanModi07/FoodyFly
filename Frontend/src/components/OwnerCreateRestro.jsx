@@ -1,7 +1,7 @@
-import { useState , useNavigate } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Navigate } from "react-router";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
@@ -13,6 +13,7 @@ transition-colors duration-200
 ${err ? "border-red-500 focus:ring-red-400" : "border-gray-300"}`;
 
 const OwnerCreateRestro = () => {
+
 const navigate = useNavigate();
 const [loading,setLoading] = useState(false);
 const [errors,setErrors] = useState({});
@@ -44,8 +45,12 @@ if(!formData.RestroName.trim()) errs.RestroName="Restaurant name required";
 if(!formData.name.trim()) errs.name="Featured item required";
 if(!formData.cuisine.trim()) errs.cuisine="Cuisine required";
 if(!formData.imageUrl.trim()) errs.imageUrl="Image URL required";
-if(!formData.price || Number(formData.price)<=0) errs.price="Valid price required";
-if(!formData.costForTwo || Number(formData.costForTwo)<=0) errs.costForTwo="Cost for two required";
+
+if(!formData.price || isNaN(formData.price) || Number(formData.price)<=0)
+errs.price="Valid price required";
+
+if(!formData.costForTwo || isNaN(formData.costForTwo) || Number(formData.costForTwo)<=0)
+errs.costForTwo="Cost for two required";
 
 setErrors(errs);
 
@@ -77,10 +82,12 @@ promoted:formData.promoted==="true"
 toast.dismiss(t);
 toast.success("Restaurant created! Waiting for admin approval");
 
+navigate("/owner/dashboard");
+
 }catch(err){
 
 toast.dismiss(t);
-toast.error(err.response?.data?.message || "Failed to create restaurant");
+toast.error(err?.response?.data?.message || "Failed to create restaurant");
 
 }finally{
 setLoading(false);
@@ -217,12 +224,9 @@ className={inputClass()}
 <button
 type="submit"
 disabled={loading}
-onClick={()=>navigate("/owner/dashboard")}
 className="w-full py-3 bg-[#4a7ac3] hover:bg-[#355b96] text-white font-bold rounded-lg transition-colors shadow-lg disabled:opacity-60"
 >
-
 {loading ? "Creating..." : "Create Restaurant"}
-
 </button>
 
 </form>

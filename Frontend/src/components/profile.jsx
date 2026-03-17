@@ -69,7 +69,7 @@ const Profile = () => {
     }
     catch (err) {
       console.error(err);
-      const msg = err.response?.data || "Failed to fetch profile";
+      const msg = err?.response?.data || "Failed to fetch profile";
       setError(msg);
       toast.error(msg); 
     }

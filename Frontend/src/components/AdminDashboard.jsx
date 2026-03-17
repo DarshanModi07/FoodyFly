@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const StatCard = ({ icon, label, value, color }) => (
   <div className={`bg-white dark:bg-gray-700 rounded-xl p-5 border-2 ${color} shadow-md text-center`}>

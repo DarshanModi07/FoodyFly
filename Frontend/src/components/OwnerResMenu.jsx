@@ -8,7 +8,7 @@ const Items = ({ items, resId, title }) => {
 
   const [editItem, setEditItem] = useState(null);
   const [formData, setFormData] = useState({});
-  const [localItems, setLocalItems] = useState(items);
+  const [localItems, setLocalItems] = useState(items || []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

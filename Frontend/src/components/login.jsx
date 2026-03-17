@@ -47,8 +47,10 @@ const Login = () => {
     if (!emailRegex.test(formData.email))
       newErrors.email = "Enter a valid email 📧";
 
-    if (formData.password.length < 6)
-      newErrors.password = "Password must be at least 6 characters 🔐";
+    if (!formData.password)
+      newErrors.password = "Password is required";
+    else if (formData.password.length < 6)
+      newErrors.password = "Password must be at least 6 characters";
 
     setErrors(newErrors);
 
@@ -248,7 +250,7 @@ const Login = () => {
       <button
         type="button"
         onClick={() => {
-          window.location.href = "http://localhost:7777/auth/google";
+          window.location.href = BASE_URL+"auth/google";
         }}
         className="w-full flex items-center justify-center gap-3
         bg-white text-gray-700

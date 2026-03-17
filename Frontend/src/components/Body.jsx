@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import ChatBot from "./ChatBot";
 import toast from "react-hot-toast"; 
-const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const Body = () => {

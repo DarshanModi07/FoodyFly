@@ -8,14 +8,14 @@ const OwnerResCard = ({ data }) => {
 
   const [editMode, setEditMode] = useState(false);
 
-  const [cardData, setCardData] = useState(data);
+  const [cardData, setCardData] = useState(data || {});
 
   const [formData, setFormData] = useState({
-    RestroName: data.RestroName,
-    name: data.name,
-    cuisine: data.cuisine,
-    imageUrl: data.imageUrl,
-    price: data.price,
+    RestroName: data.RestroName || "",
+    name: data.name || "",
+    cuisine: data.cuisine || "",
+    imageUrl: data.imageUrl || "",
+    price: data.price || "",
   });
 
   const handleChange = (e) => {
@@ -35,7 +35,7 @@ const OwnerResCard = ({ data }) => {
 
       await axios.patch(
         BASE_URL + "owner/editRestroDetails",
-        formData,
+        { ...formData, price: Number(formData.price) },
         { withCredentials: true }
       );
 
@@ -53,7 +53,7 @@ const OwnerResCard = ({ data }) => {
     } catch (err) {
 
       toast.dismiss(loadingToast);
-      toast.error(err.response?.data?.message || "Update failed");
+      toast.error(err?.response?.data?.message || "Update failed");
 
     }
   };

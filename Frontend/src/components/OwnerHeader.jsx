@@ -21,9 +21,11 @@ const OwnerHeader = () => {
                     setShowAuth(false);
                     try {
                         const restro = await axios.get(BASE_URL + "owner/myRestaurant", { withCredentials: true });
-                        setRestroName(restro.data.data?.restaurant?.RestroName || "");
-                        setStatus(restro.data.data?.menu?.status || "pending");
-                    } catch {}
+                        setRestroName(restro?.data?.data?.restaurant?.RestroName || "");
+                        setStatus(restro?.data?.data?.menu?.status || "pending");
+                    } catch (err) {
+                        console.error(err);
+                    }
                 } else {
                     setShowAuth(true);
                 }

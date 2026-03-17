@@ -19,10 +19,17 @@ const navigate = useNavigate();
 
 const { feed, menu } = location.state || {};
 
+if (!feed || !menu) {
+  return (
+    <div className="text-center p-10">
+      Invalid restaurant data. Please return to dashboard.
+    </div>
+  );
+}
+
 const [loading,setLoading] = useState(false);
 
 const [formData,setFormData] = useState({
-
 RestroName:feed?.RestroName || "",
 name:feed?.name || "",
 cuisine:feed?.cuisine || "",
@@ -32,19 +39,16 @@ promoted:String(feed?.promoted || false),
 keywords:feed?.keywords?.join(", ") || "",
 BannerImageUrl:menu?.imageUrl || "",
 costForTwo:menu?.costForTwo || ""
-
 });
 
 const handleChange=(e)=>{
 const {name,value}=e.target;
-
 setFormData(prev=>({...prev,[name]:value}));
 };
 
 const handleSubmit=async(e)=>{
 
 e.preventDefault();
-
 setLoading(true);
 
 const t = toast.loading("Updating restaurant...");
@@ -70,7 +74,7 @@ navigate("/owner/dashboard");
 }catch(err){
 
 toast.dismiss(t);
-toast.error(err.response?.data?.message || "Update failed");
+toast.error(err?.response?.data?.message || "Update failed");
 
 }finally{
 setLoading(false);
@@ -228,9 +232,7 @@ type="submit"
 disabled={loading}
 className="w-full py-3 bg-[#4a7ac3] hover:bg-[#355b96] text-white font-bold rounded-lg"
 >
-
 {loading ? "Updating..." : "Update Restaurant"}
-
 </button>
 
 </form>
