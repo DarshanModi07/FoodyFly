@@ -181,28 +181,6 @@ const Header = () => {
 
           <ul className="flex flex-col gap-4 text-lg">
             
-            <NavLink to="/">
-            <li onClick={closeMenu} className="text-center">
-              Home
-            </li>
-            </NavLink>
-
-              <NavLink to="/about">
-            <li onClick={closeMenu} className="text-center">
-              About
-            </li>
-              </NavLink>
-
-              <NavLink to="/contact">
-            <li onClick={closeMenu} className="text-center">
-              Contact
-            </li>
-              </NavLink>
-
-              <li onClick={closeMenu} className="text-center">
-              <ThemeToggle />
-              </li>
-
             {showAuth ? (
 
               <>
@@ -228,6 +206,30 @@ const Header = () => {
                 </NavLink>
 
             )}
+
+            <NavLink to="/">
+            <li onClick={closeMenu} className="text-center">
+              Home
+            </li>
+            </NavLink>
+
+              <NavLink to="/about">
+            <li onClick={closeMenu} className="text-center">
+              About
+            </li>
+              </NavLink>
+
+              <NavLink to="/contact">
+            <li onClick={closeMenu} className="text-center">
+              Contact
+            </li>
+              </NavLink>
+
+              <li onClick={closeMenu} className="text-center">
+              <ThemeToggle />
+              </li>
+
+            
 
           </ul>
 
