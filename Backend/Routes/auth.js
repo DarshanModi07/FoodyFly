@@ -9,6 +9,8 @@ const passport = require("passport");
 const session = require("express-session");
 const googleStrategy = require("passport-google-oauth20").Strategy;
 const CLIENT_URL=process.env.CLIENT_URL
+const JWT_SECRET=process.env.JWT_SECRET
+
 
 authRouter.get(
   "/auth/google",
@@ -74,14 +76,14 @@ authRouter.post("/signup", async (req, res) => {
         _id: savedUser._id,
         role: savedUser.role
       },
-      process.env.JWT_SECRET,
+      JWT_SECRET,
       { expiresIn: "7d" }
     );
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -129,14 +131,14 @@ authRouter.post("/login", async (req, res) => {
         _id: foundedUser._id,
         role: foundedUser.role
       },
-      process.env.JWT_SECRET,
+      JWT_SECRET,
       { expiresIn: "7d" }
     );
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // true in production
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -191,7 +193,7 @@ authRouter.get("/verifyUser", async (req, res) => {
       });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token,JWT_SECRET);
 
     const user = await User.findById(decoded._id)
 
@@ -243,7 +245,7 @@ authRouter.post("/owner/signup", async (req, res) => {
         _id: savedUser._id,
         role: savedUser.role
       },
-      process.env.JWT_SECRET,
+      JWT_SECRET,
       { expiresIn: "7d" }
     );
 
