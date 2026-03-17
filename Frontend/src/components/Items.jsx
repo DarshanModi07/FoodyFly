@@ -174,7 +174,7 @@ const Items = ({ items, resId, title, onCartUpdate }) => {
             </div>
 
             <div className="text-sm mt-1">
-              Quantity: {item.qty}
+              Quantity: {item.qty || 0}
             </div>
 
           </div>
