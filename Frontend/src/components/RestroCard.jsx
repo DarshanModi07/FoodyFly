@@ -1,20 +1,6 @@
-import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 const RestroCard = ({ data }) => {
-
-    const Dispatch = useDispatch();
-
-    const handleAddItem = (data) => {
-        // Dispatch an Action
-        Dispatch(addItem(data));
-        console.log("Item Added", data);
-    }
-
-    const hanldeRemoveItem = (item) => {
-            Dispatch(removeItem(item));
-            console.log("Item Removed", item);
-        }
 
     return (
         <div className="
