@@ -156,9 +156,9 @@ const Header = () => {
         <div className="flex items-center gap-3 md:hidden">
 
           <NavLink to="/cart">
-            <li onClick={closeMenu} className="text-center">
+            <div onClick={closeMenu} className="text-center">
                 Cart ({cartCount})
-            </li>
+            </div>
               </NavLink>
           
 
@@ -199,7 +199,7 @@ const Header = () => {
             </li>
               </NavLink>
 
-              <li>
+              <li onClick={closeMenu} className="text-center">
               <ThemeToggle />
               </li>
 

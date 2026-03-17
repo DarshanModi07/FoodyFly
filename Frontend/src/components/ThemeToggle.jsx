@@ -21,7 +21,7 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
       className="px-3 py-1 rounded  text-2xl text-white bg-gray-800 dark:bg-yellow-100 dark:text-gray-800"
     >
-      {theme === "light" ? "🌙" : "☀️"}
+      {theme === "light" ? "🌙 Dark" : "☀️ Light"}
     </button>
   );
 };
