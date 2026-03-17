@@ -230,7 +230,7 @@ const handleSubmit = async (e) => {
 
 <button
   onClick={() => {
-    window.location.href = "http://localhost:7777/auth/google";
+    window.location.href = BASE_URL+ "auth/google";
   }}
   className="
     w-full flex items-center justify-center gap-3
