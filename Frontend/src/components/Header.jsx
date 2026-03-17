@@ -155,7 +155,12 @@ const Header = () => {
 
         <div className="flex items-center gap-3 md:hidden">
 
-          <ThemeToggle />
+          <NavLink to="/cart">
+            <li onClick={closeMenu} className="text-center">
+                Cart ({cartCount})
+            </li>
+              </NavLink>
+          
 
           <button
             onClick={toggleMenu}
@@ -194,11 +199,9 @@ const Header = () => {
             </li>
               </NavLink>
 
-              <NavLink to="/cart">
-            <li onClick={closeMenu} className="text-center">
-                Cart ({cartCount})
-            </li>
-              </NavLink>
+              <li>
+              <ThemeToggle />
+              </li>
 
             {showAuth ? (
 
