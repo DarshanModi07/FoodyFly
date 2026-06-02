@@ -4,23 +4,46 @@ const OpenAI = require("openai");
 
 require("dotenv").config();
 
-const client = new OpenAI({
-  baseURL: "https://openrouter.ai/api/v1",
-  apiKey: process.env.OPENROUTER_KEY,
-  defaultHeaders: {
-    // This uses your deployed URL if it exists, otherwise localhost
-    "HTTP-Referer": process.env.CLIENT_URL, 
-    "X-Title": "FoodyFly",
-  }
-});
+const ABOUT_FOODYFLY_REPLY = "FoodyFly is a MERN food-ordering platform where users discover restaurants, order meals, and pay securely. 🍔🚀";
+
+const isAboutFoodyFlyPrompt = (question = "") => {
+  const normalizedQuestion = question.trim().toLowerCase();
+
+  return (
+    normalizedQuestion.includes("foodyfly") ||
+    /^tell me about (it|it's|its)\b/.test(normalizedQuestion)
+  );
+};
 
 GenaiRouter.post("/ask-ai", async (req, res) => {
     try {
         const { userQuestion, allFeedData } = req.body;
 
-        if (!userQuestion || !allFeedData) {
+        if (!userQuestion?.trim()) {
             return res.status(400).json({ success: false, message: "Missing Data" });
         }
+
+        if (isAboutFoodyFlyPrompt(userQuestion)) {
+            return res.status(200).json({ success: true, answer: ABOUT_FOODYFLY_REPLY });
+        }
+
+        if (!Array.isArray(allFeedData) || allFeedData.length === 0) {
+            return res.status(400).json({ success: false, message: "Missing Data" });
+        }
+
+        if (!process.env.OPENROUTER_KEY) {
+            return res.status(500).json({ success: false, message: "AI Error: Missing OPENROUTER_KEY" });
+        }
+
+        const client = new OpenAI({
+          baseURL: "https://openrouter.ai/api/v1",
+          apiKey: process.env.OPENROUTER_KEY,
+          defaultHeaders: {
+            // This uses your deployed URL if it exists, otherwise localhost
+            "HTTP-Referer": process.env.CLIENT_URL,
+            "X-Title": "FoodyFly",
+          }
+        });
 
         // 1. Prepare Context (Keep it concise for speed)
         const contextText = allFeedData.map((restro) => 
@@ -71,3 +94,4 @@ Only return the answer sentence.
 });
 
 module.exports = GenaiRouter;
+module.exports.isAboutFoodyFlyPrompt = isAboutFoodyFlyPrompt;
